@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+            <li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="BulletShieldPsychic"]/comps/li/interceptOutgoingProjectiles</xpath>
+                <value>
+					<interceptOutgoingProjectiles>false</interceptOutgoingProjectiles>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+				<xpath>Defs/AbilityDef[defName="BulletShield"]/description</xpath>
+                <value>
+					<description>Generate a spherical skipgate that sends all incoming ground-level projectiles to some distant place. People and items are not affected.</description>
+                </value>
+            </li>
+		</operations>
+	</Operation>
+</Patch>
